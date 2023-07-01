@@ -3,7 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flexbox;
 }
+*{
+  background-color: #C4A484
+  ;
+}
+
 
 .logo {
   height: 6em;
