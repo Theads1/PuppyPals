@@ -11,9 +11,12 @@ function App() {
 
   const featuredPup = puppies.find((pup)=> pup.id === featPupId)
   console.log(featuredPup)
+  const styles = {
+    border: '2px solid rgba(0, 0, 0, 0.05)',
+};
   return (
   
-      <div className="App">
+      <div style={styles} className="App">
       { puppies.map((puppy) => {
 
       return <p onClick={()=>{setFeatPupId(puppy.id)}} key={puppy.id}>{puppy.name}</p>;
